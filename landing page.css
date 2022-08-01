@@ -1,0 +1,225 @@
+body {
+    background-color: #f4f4f4ef;
+    color: rgb(0, 0, 0);
+    font-family: 'Questrial', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+.volc {
+    height: 42px;
+    width: 42px;
+    margin-right: 25px;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 53px;
+    background: black;
+    position: sticky;
+    padding: 6px 14px;
+    transition: all 1s ease;
+}
+
+.sidebar:hover {
+    width: 210px;
+    transition: all 1s ease;
+} 
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.logo a {
+    color:#f4f4f4ef;
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navlist ul {
+    margin-top: 30px;
+}
+
+.navlist ul li {
+    position: relative;
+    height: 45px;
+    width: 200px;
+    list-style: none;
+    line-height: 45px;
+    margin-bottom: 7px;
+    margin-left: -35px;
+}
+
+.navlist ul li a {
+    color: #f4f4f4ef;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+}
+
+.navlist ul li a:hover {
+    color: black;
+    background: #f4f4f4ef;
+}
+
+.navlist ul li a i {
+    height: 45px;
+    min-width: 40px;
+    border-radius: 12px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 27px;
+    font-size: 20px;
+}
+
+.logout {
+    height: 45px;
+    line-height: 45px;
+    margin-top: 90px;
+}
+
+.heading {
+    position: relative;
+}
+
+.main {
+    position: relative;
+    padding: 5px 20px;
+    width: 100%;
+}
+
+.main-top {
+    display: flex;
+    width: 100%;
+}
+
+.main-top h1 {
+    margin-left: 30px;
+}
+
+.main-top i {
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color:black;
+    font-size: 30px;
+    padding: 8px 0px;
+}
+
+.details {
+    display: flex;
+    width: 100%;
+}
+
+.details .card {
+    width: 25%;
+    height: 180px;
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 5px ;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.empdetails {
+    width: 97%;
+    height: 340px;
+    padding: 10px;
+    padding-top: 5px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+    margin-top: 50px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.empdetails h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.emptable {
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0; 
+}
+
+table thead tr {
+    color: white;
+    background: black;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.emptable th,
+.emptable td {
+    padding: 12px 15px;
+}
+
+.emptable tbody tr {
+    border-bottom: 1px solid rgb(235, 235, 235);
+    text-align: center;
+}
+
+.emptable tbody tr:nth-of-type(even) {
+    background: rgb(235, 235, 235);
+}
+
+.emptable tbody tr.active {
+    font-weight: bold;
+    color: black;
+}
+
+.emptable tbody tr:last-of-type {
+    border-bottom: 1.5px solid black;
+}
+
+.emptable button {
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: black;
+    color: #FFFFFF;
+}
+
+.emptable button:hover {
+    background: rgba(0, 0, 0, 0.864);
+    color: white;
+    transition: 0.3s;
+    border: rgba(0, 0, 0, 0.864);
+    cursor: pointer;
+}
+
+.emptable a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 13px;
+}

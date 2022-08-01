@@ -1,0 +1,202 @@
+body {
+    background-color: #FFFFFF;
+    color: rgb(0, 0, 0);
+    font-family: 'Questrial', sans-serif !important;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+    width: 1100px;
+    height: 850px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.volcano {
+    width: 480px;
+    height: 850px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
+}
+
+.signupform {
+    margin: auto;
+    width: 29.5%;
+}
+
+label {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+::placeholder {
+    color: rgb(140, 140, 140);
+    font-weight: normal;
+    font-size: 13.5px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.title {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.textbox {
+    margin-bottom: 25px;
+}
+
+#fname {
+    height: 30px;
+    width: 300px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 4px;
+}
+
+#email {
+    height: 30px;
+    width: 300px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 4px;
+}
+
+#pwd {
+    height: 30px;
+    width: 300px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 4px;
+}
+
+#number {
+    height: 30px;
+    width: 300px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 4px;
+}
+
+#dob {
+    height: 30px;
+    width: 300px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 4px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.genx {
+    margin-bottom: 28px;
+}
+
+#signup {
+    background-color: black;
+    border-radius: 9px;
+    height: 38px;
+    width: 323px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+    margin-bottom: 20px;
+} 
+
+#signup a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#signup:hover {
+    background: rgba(0, 0, 0, 0.864);
+    color: white;
+    transition: 0.3s;
+    border: rgba(0, 0, 0, 0.864);
+    cursor: pointer;
+}
+
+#google {
+    background-color: transparent;
+    border-radius: 9px;
+    height: 38px;
+    width: 323px;
+    border: 1.5px solid rgb(184, 184, 184);
+    margin-bottom: 40px;
+}
+
+#google a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight:bold;
+    font-size: 13px;
+    margin-left: 75px;
+    padding-top: 5px;
+}
+
+.googleicon {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    
+}
+
+.signin p {
+    font-size: 13.5px;
+    text-align: center;
+    color: rgb(140, 140, 140);
+}
+
+.signin p a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: bolder;
+}
+
+

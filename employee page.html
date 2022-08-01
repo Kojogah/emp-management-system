@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="employee page.css">
+    <title>Employee page</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="landing page.html"><img src="volclogo.jpg" alt="volc" class="volc">GeoTech</a>
+            </div>
+            <div class="navlist">
+                <ul>
+                    <li>
+                        <a href="landing page.html"><i class='bx bx-grid-alt' ></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="employee page.html"><i class='bx bx-user' ></i>Employees</a>
+                    </li>
+                    <li>
+                        <a href="salary page.html"><i class='bx bx-money' ></i>Salaries</a>
+                    </li>
+                    <li>
+                        <a href=""><i class='bx bx-folder' ></i>Documents</a>
+                    </li>
+                    <li>
+                        <a href=""><i class='bx bxs-bar-chart-alt-2' ></i>Statistics</a>
+                    </li>
+                    <li>
+                        <a href=""><i class='bx bx-chat' ></i>Messages</a>
+                    </li>
+                    <li>
+                        <a href=""><i class='bx bx-cog' ></i>Settings</a>
+                    </li>
+                    <li>
+                        <a href=""><i class='bx bx-calendar' ></i>Calender</a>
+                    </li>
+                    <li>
+                        <a href=""><i class='bx bx-phone' ></i>Help Center</a>
+                    </li>
+                    <li>
+                        <div class="logout">
+                            <a href="login.html"><i class='bx bx-log-out' ></i>LOGOUT</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="empdetails">
+                <h1>Employee Details</h1>
+                <div class="addemp">
+                    <i class='bx bx-search' id="mont"></i><input type="text" id="search" name="search" placeholder="Search">
+                    <button class="addd" id="addd"><a href="">Add Employee</a></button>
+                </div>
+                <table class="emptable">
+                    <thead>
+                        <tr><th></th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Email</th>
+                            <th>Dob</th>
+                            <th>Role</th>
+                            <th>Department</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>    
+                        <tr>
+                            <td>1</td>
+                            <td>EMP221549</td>
+                            <td>David Danso</td>
+                            <td>Male</td>
+                            <td>ddanso@gmail.com</td>
+                            <td>19/05/2002</td>
+                            <td>Programmer</td>
+                            <td>IT Department</td>
+                            <td>
+                                <div class="delete">
+                                    <button><i class='bx bx-trash'></i>Delete</button>
+                                </div>
+                            </td>
+                            <td><button id="editt">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>EMP219654</td>
+                            <td>Charles Boamah</td>
+                            <td>Male</td>
+                            <td>bcharles@gmail.com</td>
+                            <td>05/08/2000</td>
+                            <td>Auditor</td>
+                            <td>Interal Audit Department</td>
+                            <td>
+                                <div class="delete">
+                                    <button><i class='bx bx-trash'></i>Delete</button>
+                                </div>
+                            </td>
+                            <td><button id="editt">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>EMP222567</td>
+                            <td>Anastasia Hewlett</td>
+                            <td>Female</td>
+                            <td>anastacii@gmail.com</td>
+                            <td>03/10/2003</td>
+                            <td>Web Engineer</td>
+                            <td>IT Department</td>
+                            <td>
+                                <div class="delete">
+                                    <button><i class='bx bx-trash'></i>Delete</button>
+                                </div>
+                            </td>
+                            <td><button id="editt">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>EMP220648</td>
+                            <td>Christy Bouabre</td>
+                            <td>Female</td>
+                            <td>likani19@gmail.com</td>
+                            <td>19/12/2002</td>
+                            <td>Accountant</td>
+                            <td>Accounting Department</td>
+                            <td>
+                                <div class="delete">
+                                    <button><i class='bx bx-trash'></i>Delete</button>
+                                </div>
+                            </td>
+                            <td><button id="editt">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>EMP218786</td>
+                            <td>Joel Amoako</td>
+                            <td>Male</td>
+                            <td>xceejay@gmail.com</td>
+                            <td>12/10/2000</td>
+                            <td>UI Designer</td>
+                            <td>IT department</td>
+                            <td>
+                                <div class="delete">
+                                    <button><i class='bx bx-trash'></i>Delete</button>
+                                </div>
+                            </td>
+                            <td><button id="editt">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>EMP221684</td>
+                            <td>Mikol Damoah</td>
+                            <td>Male</td>
+                            <td>mikolcd@gmail.com</td>
+                            <td>27/05/2000</td>
+                            <td>Marketing Manager</td>
+                            <td>Marketing Department</td>
+                            <td>
+                                <div class="delete">
+                                    <button><i class='bx bx-trash'></i>Delete</button>
+                                </div>
+                            </td>
+                            <td><button id="editt">Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+    </div>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="title">
+                <h1>Add Employee</h1>
+            </div>
+            <div class="firstpart">
+                <h1>PROFILE IMAGE</h1>
+                <div class="profilepic">
+                    <img src="profilepicture.jpg" alt="pic" class="pic">
+                    <div class="changeimg">
+                        <a href=""><i class='bx bxs-image'></i>Change Profile Image</a>
+                    </div>
+                </div>
+                <div class="textbox">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="genx">
+                    <label for="gender" id="gender">Gender:</label>
+                    <br><input type="radio" id="male" name="gender" value="male">
+                    <label for="male" id="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" id="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other" id="other">Other</label>
+                </div>
+            </div>
+            <div class="fillin">
+                <h2>EMPLOYEE DETAILS</h2>
+                <div class="textbox">
+                    <label for="fname">Full name</label>
+                    <br><input type="text" id="fname" placeholder="Full name" required autofocus>
+                </div>
+                <div class="textbox">
+                    <label for="email">Email</label>
+                    <br><input type="text" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="textbox">
+                    <label for="number">Phone number</label>
+                    <br><input type="number" id="number" placeholder="Phone number" required>
+                </div>
+                <div class="textbox">
+                    <label for="role">Role</label>
+                    <br><input type="text" id="role" placeholder="Role" required>
+                </div>
+                <div class="textbox">
+                    <label for="department">Department</label>
+                    <br><input type="text" id="department" placeholder="Department" required>
+                </div>
+            </div>
+            <div class="functions">
+                <button class="vamp"><a href="">Add Employee</a></button>
+                <button class="close">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-modal1">
+        <div class="modal-content">
+            <div class="title">
+                <h1>Edit Employee Info.</h1>
+            </div>
+            <div class="firstpart">
+                <h1>PROFILE IMAGE</h1>
+                <div class="profilepic">
+                    <img src="profilepicture.jpg" alt="pic" class="pic">
+                    <div class="changeimg">
+                        <a href=""><i class='bx bxs-image'></i>Change Profile Image</a>
+                    </div>
+                </div>
+                <div class="textbox">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="genx">
+                    <label for="gender" id="gender">Gender:</label>
+                    <br><input type="radio" id="male" name="gender" value="male">
+                    <label for="male" id="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" id="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other" id="other">Other</label>
+                </div>
+            </div>
+            <div class="fillin">
+                <h2>EMPLOYEE DETAILS</h2>
+                <div class="textbox">
+                    <label for="fname">Full name</label>
+                    <br><input type="text" id="fname" placeholder="Full name" required autofocus>
+                </div>
+                <div class="textbox">
+                    <label for="email">Email</label>
+                    <br><input type="text" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="textbox">
+                    <label for="number">Phone number</label>
+                    <br><input type="number" id="number" placeholder="Phone number" required>
+                </div>
+                <div class="textbox">
+                    <label for="role">Role</label>
+                    <br><input type="text" id="role" placeholder="Role" required>
+                </div>
+                <div class="textbox">
+                    <label for="department">Department</label>
+                    <br><input type="text" id="department" placeholder="Department" required>
+                </div>
+            </div>
+            <div class="functions">
+                <button class="vamp"><a href="">Save changes</a></button>
+                <button class="close1">Cancel</button>
+            </div>
+        </div>
+    </div>   
+</body>
+<script>
+    document.getElementById('addd').addEventListener('click',function() {
+        document.querySelector('.bg-modal').style.display = 'flex'
+    });
+
+    document.querySelector('.close').addEventListener('click',function() {
+        document.querySelector('.bg-modal').style.display = 'none';
+    });
+
+    document.getElementById('editt').addEventListener('click',function() {
+        document.querySelector('.bg-modal1').style.display = 'flex'
+    });
+
+    document.querySelector('.close1').addEventListener('click',function() {
+        document.querySelector('.bg-modal1').style.display = 'none';
+    });
+</script>
+</html> 

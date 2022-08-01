@@ -1,0 +1,179 @@
+body {
+    background-color: #FFFFFF;
+    color: rgb(0, 0, 0);
+    font-family: 'Questrial', sans-serif !important;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+    width: 800px;
+    height: 600px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.volcano {
+    width: 350px;
+    height: 600px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
+}
+
+.loginform {
+    margin: auto;
+    width: 33.5%;
+}
+
+#email {
+    height: 30px;
+    width: 250px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 4px;
+}
+
+#pwd {
+    height: 30px;
+    width: 250px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 4px;
+}
+
+label {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+::placeholder {
+    color: rgb(140, 140, 140);
+    font-weight: normal;
+    font-size: 13.5px;
+    font-family: 'Questrial' , sans-serif;
+}
+
+.title {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+#signin {
+    background-color: black;
+    border-radius: 9px;
+    height: 38px;
+    width: 275px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20);
+    font-family: 'Questrial', sans-serif;
+}
+
+#signin:hover {
+    background: rgba(0, 0, 0, 0.864);
+    color: white;
+    transition: 0.3s;
+    border: rgba(0, 0, 0, 0.864);
+    cursor: pointer;
+}
+
+#signin a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#google {
+    background-color: transparent;
+    border-radius: 9px;
+    height: 38px;
+    width: 275px;
+    border: 1.5px solid rgb(184, 184, 184);
+    font-family: 'Questrial', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
+}
+
+#google:hover {
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.20);
+}
+
+#google a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight:bold;
+    font-size: 13px;
+    margin-left: 50px;
+    padding-top: 5px;
+    
+    
+}
+
+.googleicon {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    
+}
+
+.signup p {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(140, 140, 140);
+    margin-top: 60px;
+    text-align: center;
+}
+
+.signup p a {
+    text-decoration: none;
+    color: black;
+    font-size: 12.5px; 
+}
+
+.recover p {
+    margin-bottom: 35px;
+}
+
+.recover p a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.info {
+    margin-bottom: 50px;
+}
+
+.info p {
+    font-size: 13.5px;
+    text-align: center;
+    color: rgb(140, 140, 140); 
+}

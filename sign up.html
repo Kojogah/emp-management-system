@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>sign up</title>
+    <link rel="stylesheet" href="sign up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="employee.jpg" alt="volcano" class="volcano">
+        <div class="signupform">
+            <div class="title">
+                <h>Create an Account</h>
+            </div>
+            <div class="textbox">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Full name" required autofocus>
+            </div>
+            <div class="textbox">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="textbox">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd" placeholder="Password" required>
+            </div>
+            <div class="textbox">
+                <label for="number">Phone number</label>
+                <input type="number" id="number" name="number" placeholder="Phone number" required>
+            </div>
+            <div class="textbox">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="genx">
+                <label for="gender" id="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" id="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" id="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other" id="other">Other</label>
+            </div>
+            <button id="signup"><a href="login.html">Sign Up</a></button>
+            <button id="google"><a href=""><img src="google.png" alt="google" class="googleicon">Sign in with Google</a></button>
+            <div class="signin">
+                <p>Already have an account? <a href="login.html">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

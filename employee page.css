@@ -1,0 +1,457 @@
+body {
+    background-color: #f4f4f4ef;
+    color: rgb(0, 0, 0);
+    font-family: 'Questrial', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+.volc {
+    height: 42px;
+    width: 42px;
+    margin-right: 25px;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 53px;
+    background: black;
+    position: sticky;
+    padding: 6px 14px;
+    transition: all 1s ease;
+}
+
+.sidebar:hover {
+    width: 210px;
+    transition: all 1s ease;
+} 
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.logo a {
+    color:#f4f4f4ef;
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navlist ul {
+    margin-top: 30px;
+}
+
+.navlist ul li {
+    position: relative;
+    height: 45px;
+    width: 200px;
+    list-style: none;
+    line-height: 45px;
+    margin-bottom: 7px;
+    margin-left: -35px;
+}
+
+.navlist ul li a {
+    color: #f4f4f4ef;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+}
+
+.navlist ul li a:hover {
+    color: black;
+    background: #f4f4f4ef;
+}
+
+.navlist ul li a i {
+    height: 45px;
+    min-width: 40px;
+    border-radius: 12px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 27px;
+    font-size: 20px;
+}
+
+.logout {
+    height: 45px;
+    line-height: 45px;
+    margin-top: 90px;
+}
+
+.empdetails {
+    width: 90%;
+    align-items: center;
+    margin: 15px;
+    height: 680px;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 6px 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.emptable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0; 
+    text-align: center;
+}
+
+table thead tr {
+    color: white;
+    background: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.emptable th,
+.emptable td {
+    padding: 12px 12px;
+}
+
+.emptable tbody tr {
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.emptable tbody tr:nth-of-type(even) {
+    background: rgb(235, 235, 235);
+}
+
+.emptable tbody tr.active {
+    font-weight: bold;
+    color: black;
+}
+
+.emptable tbody tr:last-of-type {
+    border-bottom: 1.5px solid black;
+}
+
+.emptable button {
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: black;
+    color: #FFFFFF;
+    font-family: 'Questrial', sans-serif;
+    font-weight: normal;
+    height: 35px;
+}
+
+.emptable button:hover {
+    background: rgba(0, 0, 0, 0.796);
+    color: white;
+    transition: 0.3s;
+    border: rgba(0, 0, 0, 0.796);
+}
+
+.emptable button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Questrial', sans-serif;
+} 
+
+#search {
+    height: 30px;
+    width: 160px;
+    padding: 0px 30px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    margin-right: 50px;
+}
+
+#mont {
+    font-size: 20px;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 9px;
+}
+
+.addemp {
+    float: right;
+    margin-top: -55px;
+    margin-right: 30px; 
+}
+
+.addemp button {
+    height: 35px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    background: black;
+    border: 0;
+}
+
+.addemp button a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.addemp button:hover {
+    background: rgba(0, 0, 0, 0.796);
+    color: white;
+    transition: 0.3s;
+    border: rgba(0, 0, 0, 0.796);
+    cursor: pointer;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-modal1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    width: 600px;
+    height: 650px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.pic {
+    height: 200px;
+}
+
+#fname {
+    height: 30px;
+    width: 200px;
+    padding: 2px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+#email {
+    height: 30px;
+    width: 200px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin-top: 4px;
+}
+
+#number {
+    height: 30px;
+    width: 200px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+#role {
+    height: 30px;
+    width: 200px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+#department {
+    height: 30px;
+    width: 200px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+#dob {
+    height: 30px;
+    width: 200px;
+    padding: 1px 10px;
+    font-size: 13px;
+    border: 1.5px solid rgb(184, 184, 184);
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 7px;
+    font-family: 'Questrial', sans-serif;
+    margin-bottom: 15px;
+}
+
+::placeholder {
+    color: rgb(140, 140, 140);
+    font-weight: normal;
+    font-size: 13.5px;
+    font-family: 'Questrial', sans-serif;
+}
+
+label {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.changeimg {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.changeimg a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(61, 125, 255);
+}
+
+.changeimg a i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.fillin {
+    float: right;
+    margin-right: 60px;
+    margin-top: -385px;
+    width: 210px;
+}
+
+.fillin h2 {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(81, 81, 81);
+    padding-bottom: 20px;
+}
+
+.firstpart {
+    width: 210px;
+    margin-left: 40px;
+}
+
+.title h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    font-size: 28px;   
+}
+
+.firstpart h1 {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(81, 81, 81);
+}
+
+.vamp {
+    height: 35px;
+    width: 130px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    background: black;
+    border: 0;
+    margin-right: 50px;
+}
+
+.vamp a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.vamp:hover {
+    background: rgba(0, 0, 0, 0.796);
+    color: white;
+    transition: 0.3s;
+    border: rgba(0, 0, 0, 0.796);
+    cursor: pointer;
+}
+
+.close {
+    height: 35px;
+    width: 130px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+}
+
+.close1 {
+    height: 35px;
+    width: 130px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+}
+
+.functions {
+    margin-top: 75px;
+    text-align: center;
+}
